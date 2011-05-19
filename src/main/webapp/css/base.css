@@ -1,0 +1,245 @@
+/* @override http://cms.librecad.org/modules/templates-librecad/css/01base.css */
+
+
+body {
+    font: 87.5% sans-serif;
+    background: #f0f0f0;
+    min-width: 1024px;
+    text-align: justify;
+    line-height: 175%;
+    color: #333;
+}
+
+#bodywrapper {
+    background-color: #000;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a {
+    color: #4f6e00;
+    text-decoration: none;
+}
+
+#pagecontent p {
+    margin-bottom: 1em;
+}
+
+#pagecontent .editorialText img {
+    float: right;
+    padding-left: 10px;;
+}
+#pagecontent .editorialText {
+    clear: both;
+}
+
+#pagecontent .fineline {
+    border-bottom: 1px solid #8bca01;
+    margin: 10px 0 20px 0;
+    font-size: 0.2em;
+    height: 2px;
+}
+
+
+i{font-style: italic;}
+b {font-weight: bold;}
+code {font-family: "Courier New", Courier, mono;}
+
+#pagecontent .bigTextImageAlignRight,
+#pagecontent .bodyText 
+{
+    clear: both;
+}
+
+#pagecontent ol {
+    list-style-type: decimal;
+    margin-left: 2em;
+}
+
+/*** Page header and pagecontent ***/
+
+#header, 
+#pagecontent,
+#footer {
+    width: 960px;
+    margin: 0px auto 0 auto;
+}
+
+#header {
+    margin: 0px auto 0 auto;
+    border-bottom: 1px solid gray;
+}
+
+#pagecontent {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*** HEADER WITH SEARCH AND TOPMENU ***/
+
+#headerwrap {
+    background-color: #fff;
+    -moz-box-shadow: 0px 0px 8px #888;
+    -webkit-box-shadow: 0px 0px 8px #888;
+    box-shadow: 0px 0px 8px #888;
+}
+
+/*** SEARCH/IMAGE ***/
+#toplogo {
+    float: left;
+}
+
+#headerwrap div.topSlogan {
+    text-align: right;
+    font-size: 1.5em;
+    position: relative;
+    top: 0.75em;
+    padding-right: 2em;
+}
+
+/*** MENU ***/
+#topmenu .navbar {
+    background-color: #8bca01;
+    clear: both;
+}
+#topmenu {
+    font-size: 1em;
+    width: 100%;
+}
+
+#topmenu ul.level_1 {  
+    list-style: none;  
+    display: inline-block;
+}  
+#topmenu ul.level_1 li {  
+    text-align: left;
+    float: left;  
+    margin: 0; 
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative; /*--Declare X and Y axis base for sub navigation--*/  
+    font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+    letter-spacing: 0.2em;
+}  
+#topmenu ul.level_1 li a {  
+    padding: 5px 4px;  
+    color: #fff;
+    text-decoration: none;
+}
+#topmenu ul.level_1 li a:hover{ 
+    color: white; 
+}  
+
+#topmenu .selected, #topmenu .inPath {
+    background-color: #bde06f;
+}
+#topmenu ul.level_1 .selected > a {
+    color: #000;
+    font-weight: bold;
+}
+
+/*** FOOTER ***/
+#footer {
+    border-top: 5px solid #8bca01;
+    margin-top: 20px;
+    padding-top: 0.8em;
+    font-size: 0.8em;
+    line-height: 1.4em;
+}
+
+/*** header styles ***/
+#pagecontent h1 {
+    clear: both;
+}
+
+.bodywrapper h1 {
+    margin: 1em 0 0.5em 0;
+    font-size: 200%;
+    border-bottom: 1px solid #43c330;;
+    color: #4f6e00;
+    background: url(img/h1.png) repeat-x;
+    padding-top: 0.2em;
+    font-weight: bold;
+}
+
+.bodywrapper h2 {
+    margin: 1em 0 0.5em 0;
+    color: #4f6e00;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+/*** LIST STYLES ***/
+#pagecontent ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 1.2em;
+}
+
+/*** Homepage block, if used centers blocks on the homepage ***/
+.homePageBlock {
+    width: 200px;
+    margin: 0 auto;
+    list-style-position: inside;
+}
+.homePageBlock ul {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+/*** Download ***/
+
+h3.downloadbutton {
+    background: url(img/downloadmediumbg.png) repeat-x 5px;
+    padding-left: 0em;
+    margin:1.5em 2em 1em 0;
+    -moz-box-shadow: 0px 0px 8px #888;
+    -webkit-box-shadow: 0px 0px 8px #888;
+    box-shadow: 0px 0px 8px #888;
+}
+
+h3.downloadbutton  a {
+    padding-left: 70px;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    color: #8bca01;;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+    background: url(img/downloadmedium.png) no-repeat 20px;
+}
+
+h3.downloadbutton:hover  {
+    -moz-box-shadow: 0px 0px 18px #888;
+    -webkit-box-shadow: 0px 0px 18px #888;
+    box-shadow: 0px 0px 18px #888;
+}
+h3.downloadbutton a:hover {
+    color: #4f6e00;
+}
+
+/** Image Align Right ***/
+.bigTextImageAlignRight > p > img {
+    float: right;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    clear: both;
+}
+
+
+
+/** This might not work in IE?? ***/
+.container_16 > div.grid_8:first-child {
+    margin-left: 0;
+    margin-right: 10px;
+    width: 470px;
+}
+.container_16 > div.grid_8 {
+    margin-right: 0;
+    margin-left: 10px;
+    width: 470px;
+}
