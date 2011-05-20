@@ -1,0 +1,10 @@
+/*** Make the contet wider to 110px ***/
+
+#header,
+#pagecontent {
+    width: 1100px;
+}
+#pagecontent {
+    background-color: #fff;
+    padding: 0px 5px 0 5px;
+}

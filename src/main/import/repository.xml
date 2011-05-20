@@ -1,41 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<content xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:jnt="http://www.jahia.org/jahia/nt/1.0"
-              xmlns:jcr="http://www.jcp.org/jcr/1.0"
-              xmlns:jmix="http://www.jahia.org/jahia/mix/1.0" xmlns:j="http://www.jahia.org/jahia/1.0"
-              xmlns:mix="http://www.jcp.org/jcr/mix/1.0" >
-    <templateSets jcr:primaryType="jnt:templateSets">
-        <templates-libre jcr:primaryType="jnt:virtualsite" j:installedModules="templates-libre" j:siteType="templatesSet" >
-            <home j:displayInMenu="primary" j:isHomePage="true"
-                  jcr:primaryType="jnt:page" j:templateNode="/templateSets/templates-libre/templates/base/home">
-            </home>
-
-            <portlets jcr:primaryType="jnt:portletFolder"/>
-            <files jcr:primaryType="jnt:folder"/>
-            <contents jcr:primaryType="jnt:contentFolder"/>
-            <templates jcr:primaryType="jnt:templatesFolder">
-                <files jcr:primaryType="jnt:folder">
-                    <themes jcr:primaryType="jnt:folder">
-                        <default jcr:primaryType="jnt:folder">
-
-                        </default>
-                    </themes>
-                </files>
-                <contents jcr:primaryType="jnt:contentFolder"/>
-
-                <base jcr:mixinTypes="jmix:renderable jmix:theme" j:view="templates-libre" jcr:primaryType="jnt:template" j:theme="/templateSets/templates-libre/templates/files/themes/default">
-                    <home jcr:primaryType="jnt:pageTemplate"/>
-
-                    <simple jcr:primaryType="jnt:pageTemplate"/>
-                </base>
-
-                <content-template j:applyOn="jnt:content" j:hiddenTemplate="true" j:priority="1" j:view="templates-libre" jcr:primaryType="jnt:contentTemplate">
-                    <pagecontent jcr:primaryType="jnt:contentList">
-                        <main-resource-display j:mainResourceView="default" jcr:primaryType="jnt:mainResourceDisplay" />
-                    </pagecontent>
-                </content-template>
-
-            </templates>
-        </templates-libre>
-    </templateSets>
+<content xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:jnt="http://www.jahia.org/jahia/nt/1.0" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:jmix="http://www.jahia.org/jahia/mix/1.0" xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:rep="internal">
+  <templateSets jcr:primaryType="jnt:templateSets">
+    <templates-libre changefreq="monthly" j:installedModules="templates-libre" j:siteType="templatesSet" j:title="templates-libre" j:wcagCompliance="true" jcr:mixinTypes="jmix:sitemap" jcr:primaryType="jnt:virtualsite" priority="0.5">
+      <home changefreq="monthly" j:templateNode="/templateSets/templates-libre/templates/base/_x0031_-Column" jcr:mixinTypes="jmix:sitemap" jcr:primaryType="jnt:page" priority="0.5">
+        <topMenu-1 jcr:primaryType="jnt:contentList" />
+      </home>
+      <portlets jcr:primaryType="jnt:portletFolder" />
+      <files jcr:primaryType="jnt:folder" />
+      <contents jcr:primaryType="jnt:contentFolder" />
+      <templates jcr:primaryType="jnt:templatesFolder">
+        <files jcr:primaryType="jnt:folder">
+          <themes jcr:primaryType="jnt:folder">
+            <default jcr:primaryType="jnt:folder" />
+            <theme-wide-content jcr:primaryType="jnt:folder">
+              <theme-wide-content.css jcr:primaryType="jnt:file">
+                <jcr:content jcr:mimeType="text/css" jcr:primaryType="jnt:resource" />
+              </theme-wide-content.css>
+            </theme-wide-content>
+          </themes>
+        </files>
+        <contents jcr:primaryType="jnt:contentFolder" />
+        <base j:view="templates-libre" jcr:mixinTypes="jmix:theme" jcr:primaryType="jnt:template">
+          <menu jcr:primaryType="jnt:contentList">
+            <topMenu j:allowedTypes="jnt:navMenu" j:numberOfItems="2" jcr:primaryType="jnt:absoluteArea" />
+          </menu>
+          <search jcr:primaryType="jnt:contentList">
+            <TopRight j:allowedTypes="" j:numberOfItems="1" jcr:primaryType="jnt:absoluteArea" />
+          </search>
+          <logo jcr:primaryType="jnt:contentList">
+            <TopLeft j:allowedTypes="" j:numberOfItems="1" jcr:primaryType="jnt:absoluteArea" />
+          </logo>
+          <copyright jcr:primaryType="jnt:contentList">
+            <copyrightarea j:allowedTypes="jnt:bigText" j:numberOfItems="1" jcr:primaryType="jnt:absoluteArea" />
+          </copyright>
+          <quickmenu jcr:primaryType="jnt:contentList">
+            <footermenuarea j:allowedTypes="jnt:navMenu" j:numberOfItems="1" jcr:primaryType="jnt:absoluteArea" />
+          </quickmenu>
+          <toplogo jcr:primaryType="jnt:contentList">
+            <toplogo j:allowedTypes="jnt:imageReference" jcr:primaryType="jnt:absoluteArea" />
+          </toplogo>
+          <_x0031_-Column jcr:primaryType="jnt:pageTemplate">
+            <menu jcr:primaryType="jnt:contentList" />
+          </_x0031_-Column>
+          <Landing j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+            <pagecontent jcr:primaryType="jnt:contentList">
+              <predefined--rows-960gs column="2col88" jcr:primaryType="jnt:row" />
+              <socialArea j:allowedTypes="" jcr:primaryType="jnt:area" />
+              <predefined--rows-960gs-1 column="2col88" jcr:primaryType="jnt:row" />
+            </pagecontent>
+            <predefined--rows-960gs-col1 jcr:primaryType="jnt:contentList">
+              <_x0032_Column-Left j:allowedTypes="" jcr:primaryType="jnt:area" />
+            </predefined--rows-960gs-col1>
+            <predefined--rows-960gs-col2 jcr:primaryType="jnt:contentList">
+              <_x0032_Column-Right j:allowedTypes="" jcr:primaryType="jnt:area" />
+            </predefined--rows-960gs-col2>
+            <predefined--rows-960gs-1-col1 jcr:primaryType="jnt:contentList">
+              <area-bottomleft j:allowedTypes="" jcr:primaryType="jnt:area" />
+            </predefined--rows-960gs-1-col1>
+            <predefined--rows-960gs-1-col2 jcr:primaryType="jnt:contentList">
+              <area-bottomRight j:allowedTypes="" jcr:primaryType="jnt:area" />
+            </predefined--rows-960gs-1-col2>
+          </Landing>
+          <_x0032_-Column j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+            <pagecontent jcr:primaryType="jnt:contentList">
+              <predefined--rows-960gs column="2col88" jcr:primaryType="jnt:row" />
+            </pagecontent>
+          </_x0032_-Column>
+          <footerLicenseText jcr:primaryType="jnt:contentList">
+            <footerLicenseArea j:allowedTypes="" jcr:primaryType="jnt:absoluteArea" />
+          </footerLicenseText>
+          <footerLicenseText-1 jcr:primaryType="jnt:contentList" />
+          <topslogan jcr:primaryType="jnt:contentList">
+            <topSlogan j:allowedTypes="" j:numberOfItems="1" jcr:primaryType="jnt:absoluteArea" />
+          </topslogan>
+        </base>
+      </templates>
+    </templates-libre>
+  </templateSets>
 </content>
-        
+

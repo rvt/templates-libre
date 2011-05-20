@@ -1,0 +1,40 @@
+This project aims to provide a template for Open Source project that wants to
+use Jahia is there CMS.
+
+
+
+For installation of Jahia please go to http://www.jahia.org.
+
+TO compile this template you need to have teh following tools installed:
+
+- maven2 or maven3
+- Java JDK 1.6
+
+
+
+The settings.example.xml file is based of Jahia trunk r38009,
+you might need to get a new version from there SVN repository if
+the compile doesn't work anymore. http://subversion.jahia.org/svn/jahia/trunk
+
+
+To compile the templates-libre template to a war file copy
+settings.example.xml to ~/.m2/settings.xml  and modify
+to your needs. In most case you only need to modify the following settings:
+
+<localRepository>/home/<USER>/.m2</localRepository>
+and
+<jahia.deploy.targetServerDirectory>/opt/Jahia_xCM_v6.5-SNAPSHOT/tomcat</jahia.deploy.targetServerDirectory>
+
+After you modified you need to run build.sh
+
+When teh compilation is successfull, and I hope it will be copy the
+generated war file in the target directory to the following directory:
+ROOT/WEB-INF/var/shared_modules
+
+When jahia is set to delveopment mode it will autimatically deploy the template,
+if you didn't enable development mode you need to restart your applicaiton server.
+
+
+if you have any questions, please don't hessitate and mail me at: templates-libre@rvt.dds.nl
+
+Ries van Twisk
