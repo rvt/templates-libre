@@ -6,7 +6,6 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%--@elvariable id="currentNode" type="org.jahia.services.content.JCRNodeWrapper"--%> 
 <%--@elvariable id="renderContext" type="org.jahia.services.render.RenderContext"--%>
-<template:addResources type="css" resources="downloadbutton.css"/>
 
  
 <c:url value="${currentNode.properties.url.string}" var="downloadUrl" />

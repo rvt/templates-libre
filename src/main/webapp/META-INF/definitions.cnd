@@ -13,3 +13,9 @@
 [jnt:textWithImage] > jnt:content, mix:title, jmix:structuredContent, jmix:editorialContent
  - image (weakreference, picker[type='image'])
  - text (string, richtext) i18n
+
+[jmix:jumptopage] mixin
+ extends=jnt:page
+ itemtype=options
+ - jumptopage (weakreference) < jnt:page
+
