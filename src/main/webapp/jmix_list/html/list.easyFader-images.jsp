@@ -17,7 +17,7 @@
 <template:include view="hidden.load"/>
 
 <c:if test="${not renderContext.editMode}">
-    <template:addResources type="javascript" resources="jquery-min.js"/>
+    <template:addResources type="javascript" resources="jquery.min.js"/>
 <script type="text/javascript">
 function slideSwitch() {
     var $active = $('#slideshow IMG.active');
