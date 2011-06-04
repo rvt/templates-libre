@@ -119,8 +119,8 @@ code {font-family: "Courier New", Courier, mono;}
     margin: 0; 
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
     position: relative; /*--Declare X and Y axis base for sub navigation--*/  
     font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
     letter-spacing: 0.2em;
