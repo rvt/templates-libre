@@ -1,3 +1,7 @@
+/* @override http://cms.librecad.org/modules/templates-libre/css/base.css */
+
+/* @override http://cms.librecad.org/modules/templates-libre/css/base.css */
+
 /* @override http://cms.librecad.org/modules/templates-librecad/css/01base.css */
 
 
@@ -24,7 +28,8 @@ a {
 }
 
 #pagecontent p {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
 }
 
 #pagecontent .editorialText img {
@@ -43,8 +48,8 @@ a {
 }
 
 
-i{font-style: italic;}
-b {font-weight: bold;}
+i, em{font-style: italic;}
+b, strong {font-weight: bold;}
 code {font-family: "Courier New", Courier, mono;}
 
 #pagecontent .bigTextImageAlignRight,
@@ -89,6 +94,7 @@ code {font-family: "Courier New", Courier, mono;}
 /*** SEARCH/IMAGE ***/
 #toplogo {
     float: left;
+    padding: 5px;
 }
 
 #headerwrap div.topSlogan {
@@ -120,22 +126,26 @@ code {font-family: "Courier New", Courier, mono;}
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-left: 0.8em;
-    padding-right: 0.8em;
+    padding-right: 1em;
     position: relative; /*--Declare X and Y axis base for sub navigation--*/  
     font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
     letter-spacing: 0.2em;
 }  
 #topmenu ul.level_1 li a {  
-    padding: 5px 4px;  
     color: #fff;
     text-decoration: none;
 }
 #topmenu ul.level_1 li a:hover{ 
-    color: white; 
+    border-bottom: 1px solid white;
+    color: white;
 }  
 
 #topmenu .selected, #topmenu .inPath {
     background-color: #bde06f;
+}
+#topmenu ul.level_1 .inPath > a {
+    color: #000;
+    font-weight: bold;
 }
 #topmenu ul.level_1 .selected > a {
     color: #000;
@@ -172,6 +182,14 @@ code {font-family: "Courier New", Courier, mono;}
     font-size: 150%;
     font-weight: bold;
 }
+
+.bodywrapper h3 {
+    margin: 1em 0 0.5em 0;
+    color: #4f6e00;
+    font-size: 125%%;
+    font-weight: bold;
+}
+
 
 /*** LIST STYLES ***/
 #pagecontent ul {
@@ -243,3 +261,17 @@ h3.downloadbutton a:hover {
     margin-left: 10px;
     width: 470px;
 }
+
+/** PayPal **/
+.paypal {
+    text-align: center;
+}
+.paypal select {
+    width: 55px;
+    text-align: right;
+}
+.paypal input {
+    width: 105px;
+    margin-left:10px;
+}
+
