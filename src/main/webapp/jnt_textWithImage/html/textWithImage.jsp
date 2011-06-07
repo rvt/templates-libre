@@ -12,7 +12,7 @@
 <jcr:nodeProperty node="${currentNode}" name="jcr:title" var="title"/>
 
 <div class="editorialText">
-    <img style="width:300px" src="${image.node.url}" />
+    <c:if test="${not empty image.node.url}"><img style="width:300px" src="${image.node.url}" /></c:if>
     <c:if test="${not empty title}"><h2>${title.string}</h2></c:if>
     ${text}
 </div>
