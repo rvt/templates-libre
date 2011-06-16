@@ -263,15 +263,15 @@ h3.downloadbutton a:hover {
 }
 
 /** PayPal **/
+/** PayPal **/
 .paypal {
     text-align: center;
 }
-.paypal select {
-    width: 55px;
+.paypal .paypal-input {
+    width: 105px;
     text-align: right;
 }
-.paypal input {
+.paypal .paypal-button {
     width: 105px;
-    margin-left:10px;
+    text-align: center;
 }
-

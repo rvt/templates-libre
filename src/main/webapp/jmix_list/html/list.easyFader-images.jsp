@@ -44,7 +44,7 @@ function slideSwitch() {
         });
 }
 
-$(function() {
+$(document).ready(function() {
     setInterval( "slideSwitch()", 5000 );
 });
 
@@ -78,13 +78,15 @@ $(function() {
 
 </c:if>
 
+
 <div id="slideshow">
         <c:forEach items="${moduleMap.currentList}" var="child" varStatus="status">
             <jcr:node var="image" uuid="${child.properties['j:node'].string}"/>
                 <c:if test="${!renderContext.editMode}">
                     <c:choose>
                         <c:when test="${jcr:isNodeType(image, 'jmix:thumbnail')}">
-                            <img src="${url.context}/repository/default${image.path}" alt="">
+			    <c:url value="${image.url}" var="imgUrl" />
+                            <img src="${imgUrl}" alt="">
                         </c:when>
                     </c:choose>
                 </c:if>
