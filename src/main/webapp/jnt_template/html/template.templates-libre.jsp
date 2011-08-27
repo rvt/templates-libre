@@ -17,7 +17,7 @@
 <%@page language="java" import="org.jahia.services.render.*"%>  
 <%@page language="java" import="java.net.*"%>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="${fn:substring(renderContext.request.locale,0,2)}">
 <head>
     <c:if test="${not renderContext.editMode}">
 	<c:if test="${!empty renderContext.mainResource.node.properties['jumptopage'].node.path}">
@@ -32,6 +32,7 @@
 	</c:if>
     </c:if>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <template:addResources type="css" resources="reset.css"/>
     <jcr:nodeProperty node="${renderContext.mainResource.node}" name="jcr:description" inherited="true" var="description"/>
     <jcr:nodeProperty node="${renderContext.mainResource.node}" name="jcr:createdBy" inherited="true" var="author"/>
     <jcr:nodeProperty node="${renderContext.mainResource.node}" name="j:keywords" inherited="true" var="kws"/>
@@ -41,6 +42,7 @@
     <c:if test="${!empty author}"><meta name="author" content="${author.string}" /></c:if>
     <c:if test="${!empty keywords}"><meta name="keywords" content="${keywords}" /></c:if>
 
+    <link rel="stylesheet" type="text/css" href="<c:url value='${url.currentModule}/css/print.css'/>" media="print" />
     <title>${fn:escapeXml(renderContext.mainResource.node.displayableName)}</title>
 </head>
 <body>
@@ -61,8 +63,8 @@
     	<template:area path="footerLicenseText"/>
     </div>
 </div>
-<template:theme/>
 <template:addResources type="css" resources="reset.css,960.css,base.css,mod.css"/>
+<template:theme/>
 <c:if test="${renderContext.editMode}">
     <template:addResources type="css" resources="edit.css" />
 </c:if>
@@ -70,10 +72,5 @@
     <template:addResources type="css" resources="contribute.css" />
 </c:if>
 
-<template:addResources type="javascript" resources="jquery.min.js"/>
-<template:addResources type="javascript" resources="highliter/shCore.js,highliter/shBrushJScript.js,highliter/shBrushBash.js"/>
-<template:addResources type="css" resources="highliter/shCore.css,highliter/shThemeDefault.css" />
-
-<script type="text/javascript"> SyntaxHighlighter.all()</script>
 </body>
 </html>
