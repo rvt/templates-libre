@@ -19,6 +19,3 @@
  itemtype=options
  - jumptopage (weakreference) < jnt:page
 
-
-[jnt:twitterTicker] > jnt:content
-

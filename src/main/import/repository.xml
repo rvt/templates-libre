@@ -1,80 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:jnt="http://www.jahia.org/jahia/nt/1.0" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:jmix="http://www.jahia.org/jahia/mix/1.0" xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:rep="internal">
   <templateSets jcr:primaryType="jnt:templateSets">
-    <templates-libre changefreq="monthly" j:installedModules="templates-libre" j:siteType="templatesSet" j:title="templates-libre" j:wcagCompliance="true" jcr:mixinTypes="jmix:sitemap" jcr:primaryType="jnt:virtualsite" priority="0.5">
-      <home changefreq="monthly" j:templateNode="/templateSets/templates-libre/templates/base/_x0031_-Column" jcr:mixinTypes="jmix:sitemap" jcr:primaryType="jnt:page" priority="0.5">
-        <topMenu-1 jcr:primaryType="jnt:contentList" />
-      </home>
-      <portlets jcr:primaryType="jnt:portletFolder" />
-      <files jcr:primaryType="jnt:folder" />
-      <contents jcr:primaryType="jnt:contentFolder" />
-      <templates jcr:primaryType="jnt:templatesFolder">
-        <files jcr:primaryType="jnt:folder">
-          <themes jcr:primaryType="jnt:folder">
-            <default jcr:primaryType="jnt:folder" />
-            <theme-wide-content jcr:primaryType="jnt:folder">
-              <theme-wide-content.css jcr:primaryType="jnt:file">
+    <templates-libre changefreq="monthly" j:dependencies="default" j:installedModules="templates-libre" j:originWS="default" j:siteType="templatesSet" j:title="templates-libre" j:wcagCompliance="true" jcr:mixinTypes="jmix:sitemap" jcr:primaryType="jnt:virtualsite" priority="0.5">
+      <portlets j:originWS="default" jcr:primaryType="jnt:portletFolder" />
+      <files j:originWS="default" jcr:primaryType="jnt:folder" />
+      <contents j:originWS="default" jcr:primaryType="jnt:contentFolder" />
+      <templates j:originWS="default" jcr:primaryType="jnt:templatesFolder">
+        <base j:originWS="default" j:theme="" j:view="templates-libre" jcr:mixinTypes="jmix:theme" jcr:primaryType="jnt:template">
+          <menu j:originWS="default" jcr:primaryType="jnt:contentList">
+            <topMenu j:allowedTypes="jnt:navMenu" j:numberOfItems="2" j:originWS="default" jcr:primaryType="jnt:absoluteArea" />
+          </menu>
+          <search j:originWS="default" jcr:primaryType="jnt:contentList">
+            <TopRight j:allowedTypes="" j:numberOfItems="1" j:originWS="default" jcr:primaryType="jnt:absoluteArea" />
+          </search>
+          <logo j:originWS="default" jcr:primaryType="jnt:contentList">
+            <TopLeft j:allowedTypes="" j:numberOfItems="1" j:originWS="default" jcr:primaryType="jnt:absoluteArea" />
+          </logo>
+          <copyright j:originWS="default" jcr:primaryType="jnt:contentList">
+            <copyrightarea j:allowedTypes="jnt:bigText" j:numberOfItems="1" j:originWS="default" jcr:primaryType="jnt:absoluteArea" />
+          </copyright>
+          <quickmenu j:originWS="default" jcr:primaryType="jnt:contentList">
+            <footermenuarea j:allowedTypes="jnt:navMenu" j:numberOfItems="1" j:originWS="default" jcr:primaryType="jnt:absoluteArea" />
+          </quickmenu>
+          <toplogo j:originWS="default" jcr:primaryType="jnt:contentList">
+            <toplogo j:allowedTypes="jnt:imageReference" j:originWS="default" jcr:primaryType="jnt:absoluteArea" />
+          </toplogo>
+          <_x0031_-Column j:originWS="default" jcr:primaryType="jnt:pageTemplate">
+            <menu j:originWS="default" jcr:primaryType="jnt:contentList" />
+          </_x0031_-Column>
+          <Landing j:hiddenTemplate="false" j:originWS="default" jcr:primaryType="jnt:pageTemplate">
+            <pagecontent j:originWS="default" jcr:primaryType="jnt:contentList">
+              <predefined--rows-960gs column="2col88" j:originWS="default" jcr:primaryType="jnt:row" />
+              <socialArea j:allowedTypes="" j:originWS="default" jcr:primaryType="jnt:area" />
+              <predefined--rows-960gs-1 column="2col88" j:originWS="default" jcr:primaryType="jnt:row" />
+            </pagecontent>
+            <predefined--rows-960gs-col1 j:originWS="default" jcr:primaryType="jnt:contentList">
+              <_x0032_Column-Left j:allowedTypes="" j:originWS="default" jcr:primaryType="jnt:area" />
+            </predefined--rows-960gs-col1>
+            <predefined--rows-960gs-col2 j:originWS="default" jcr:primaryType="jnt:contentList">
+              <_x0032_Column-Right j:allowedTypes="" j:originWS="default" jcr:primaryType="jnt:area" />
+            </predefined--rows-960gs-col2>
+            <predefined--rows-960gs-1-col1 j:originWS="default" jcr:primaryType="jnt:contentList">
+              <area-bottomleft j:allowedTypes="" j:originWS="default" jcr:primaryType="jnt:area" />
+            </predefined--rows-960gs-1-col1>
+            <predefined--rows-960gs-1-col2 j:originWS="default" jcr:primaryType="jnt:contentList">
+              <area-bottomRight j:allowedTypes="" j:originWS="default" jcr:primaryType="jnt:area" />
+            </predefined--rows-960gs-1-col2>
+          </Landing>
+          <_x0032_-Column j:hiddenTemplate="false" j:originWS="default" jcr:primaryType="jnt:pageTemplate">
+            <pagecontent j:originWS="default" jcr:primaryType="jnt:contentList">
+              <predefined--rows-960gs column="2col88" j:originWS="default" jcr:primaryType="jnt:row" />
+            </pagecontent>
+          </_x0032_-Column>
+          <footerLicenseText j:originWS="default" jcr:primaryType="jnt:contentList">
+            <footerLicenseArea j:allowedTypes="" j:originWS="default" jcr:primaryType="jnt:absoluteArea" />
+          </footerLicenseText>
+          <footerLicenseText-1 j:originWS="default" jcr:primaryType="jnt:contentList" />
+          <topslogan j:originWS="default" jcr:primaryType="jnt:contentList">
+            <topSlogan j:allowedTypes="" j:numberOfItems="1" j:originWS="default" jcr:primaryType="jnt:absoluteArea" />
+          </topslogan>
+        </base>
+        <content-template j:applyOn="jnt:content" j:hiddenTemplate="true" j:originWS="default" j:priority="1" j:view="templates-libre" jcr:primaryType="jnt:contentTemplate" />
+        <files j:originWS="default" jcr:primaryType="jnt:folder">
+          <themes j:originWS="default" jcr:primaryType="jnt:folder">
+            <default j:originWS="default" jcr:primaryType="jnt:folder" />
+            <theme-wide-content j:originWS="default" jcr:primaryType="jnt:folder">
+              <theme-wide-content.css j:originWS="default" jcr:primaryType="jnt:file">
                 <jcr:content jcr:mimeType="text/css" jcr:primaryType="jnt:resource" />
               </theme-wide-content.css>
             </theme-wide-content>
           </themes>
         </files>
-        <contents jcr:primaryType="jnt:contentFolder" />
-        <base j:view="templates-libre" jcr:mixinTypes="jmix:theme" jcr:primaryType="jnt:template">
-          <menu jcr:primaryType="jnt:contentList">
-            <topMenu j:allowedTypes="jnt:navMenu" j:numberOfItems="2" jcr:primaryType="jnt:absoluteArea" />
-          </menu>
-          <search jcr:primaryType="jnt:contentList">
-            <TopRight j:allowedTypes="" j:numberOfItems="1" jcr:primaryType="jnt:absoluteArea" />
-          </search>
-          <logo jcr:primaryType="jnt:contentList">
-            <TopLeft j:allowedTypes="" j:numberOfItems="1" jcr:primaryType="jnt:absoluteArea" />
-          </logo>
-          <copyright jcr:primaryType="jnt:contentList">
-            <copyrightarea j:allowedTypes="jnt:bigText" j:numberOfItems="1" jcr:primaryType="jnt:absoluteArea" />
-          </copyright>
-          <quickmenu jcr:primaryType="jnt:contentList">
-            <footermenuarea j:allowedTypes="jnt:navMenu" j:numberOfItems="1" jcr:primaryType="jnt:absoluteArea" />
-          </quickmenu>
-          <toplogo jcr:primaryType="jnt:contentList">
-            <toplogo j:allowedTypes="jnt:imageReference" jcr:primaryType="jnt:absoluteArea" />
-          </toplogo>
-          <_x0031_-Column jcr:primaryType="jnt:pageTemplate">
-            <menu jcr:primaryType="jnt:contentList" />
-          </_x0031_-Column>
-          <Landing j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
-            <pagecontent jcr:primaryType="jnt:contentList">
-              <predefined--rows-960gs column="2col88" jcr:primaryType="jnt:row" />
-              <socialArea j:allowedTypes="" jcr:primaryType="jnt:area" />
-              <predefined--rows-960gs-1 column="2col88" jcr:primaryType="jnt:row" />
-            </pagecontent>
-            <predefined--rows-960gs-col1 jcr:primaryType="jnt:contentList">
-              <_x0032_Column-Left j:allowedTypes="" jcr:primaryType="jnt:area" />
-            </predefined--rows-960gs-col1>
-            <predefined--rows-960gs-col2 jcr:primaryType="jnt:contentList">
-              <_x0032_Column-Right j:allowedTypes="" jcr:primaryType="jnt:area" />
-            </predefined--rows-960gs-col2>
-            <predefined--rows-960gs-1-col1 jcr:primaryType="jnt:contentList">
-              <area-bottomleft j:allowedTypes="" jcr:primaryType="jnt:area" />
-            </predefined--rows-960gs-1-col1>
-            <predefined--rows-960gs-1-col2 jcr:primaryType="jnt:contentList">
-              <area-bottomRight j:allowedTypes="" jcr:primaryType="jnt:area" />
-            </predefined--rows-960gs-1-col2>
-          </Landing>
-          <_x0032_-Column j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
-            <pagecontent jcr:primaryType="jnt:contentList">
-              <predefined--rows-960gs column="2col88" jcr:primaryType="jnt:row" />
-            </pagecontent>
-          </_x0032_-Column>
-          <footerLicenseText jcr:primaryType="jnt:contentList">
-            <footerLicenseArea j:allowedTypes="" jcr:primaryType="jnt:absoluteArea" />
-          </footerLicenseText>
-          <footerLicenseText-1 jcr:primaryType="jnt:contentList" />
-          <topslogan jcr:primaryType="jnt:contentList">
-            <topSlogan j:allowedTypes="" j:numberOfItems="1" jcr:primaryType="jnt:absoluteArea" />
-          </topslogan>
-        </base>
+        <contents j:originWS="default" jcr:primaryType="jnt:contentFolder" />
       </templates>
+      <j:versionInfo j:deployementDate="2011-11-26T15:07:55.490-05:00" j:version="1.2-SNAPSHOT" jcr:primaryType="jnt:versionInfo" />
+      <home changefreq="monthly" j:isHomePage="true" j:originWS="default" j:templateNode="/templateSets/templates-libre/templates/base/1-Column" jcr:mixinTypes="jmix:sitemap" jcr:primaryType="jnt:page" priority="0.5">
+        <topMenu-1 j:originWS="default" jcr:primaryType="jnt:contentList" />
+      </home>
+      <components j:originWS="default" jcr:primaryType="jnt:componentFolder">
+        <jmix:structuredContent j:originWS="default" jcr:primaryType="jnt:componentFolder">
+          <j:translation_en jcr:description="" jcr:language="en" jcr:primaryType="jnt:translation" jcr:title="Content:Structured" />
+          <j:translation_it jcr:description="" jcr:language="it" jcr:primaryType="jnt:translation" jcr:title="Contenuti complessi" />
+          <j:translation_es jcr:description="" jcr:language="es" jcr:primaryType="jnt:translation" jcr:title="Avanzada Contenido" />
+          <j:translation_fr jcr:description="" jcr:language="fr" jcr:primaryType="jnt:translation" jcr:title="Contenus Avancés" />
+          <j:translation_pt jcr:description="" jcr:language="pt" jcr:primaryType="jnt:translation" jcr:title="Conteúdo Avançado" />
+          <j:translation_de jcr:description="" jcr:language="de" jcr:primaryType="jnt:translation" jcr:title="Content:Strukturiert" />
+          <jnt:downloadbutton j:originWS="default" jcr:primaryType="jnt:simpleComponent">
+            <j:translation_en jcr:language="en" jcr:primaryType="jnt:translation" jcr:title="downloadbutton" />
+            <j:translation_it jcr:language="it" jcr:primaryType="jnt:translation" jcr:title="downloadbutton" />
+            <j:translation_es jcr:language="es" jcr:primaryType="jnt:translation" jcr:title="downloadbutton" />
+            <j:translation_fr jcr:language="fr" jcr:primaryType="jnt:translation" jcr:title="downloadbutton" />
+            <j:translation_pt jcr:language="pt" jcr:primaryType="jnt:translation" jcr:title="downloadbutton" />
+            <j:translation_de jcr:language="de" jcr:primaryType="jnt:translation" jcr:title="downloadbutton" />
+          </jnt:downloadbutton>
+          <jnt:textWithImage j:originWS="default" jcr:primaryType="jnt:simpleComponent">
+            <j:translation_en jcr:language="en" jcr:primaryType="jnt:translation" jcr:title="textWithImage" />
+            <j:translation_it jcr:language="it" jcr:primaryType="jnt:translation" jcr:title="textWithImage" />
+            <j:translation_es jcr:language="es" jcr:primaryType="jnt:translation" jcr:title="textWithImage" />
+            <j:translation_fr jcr:language="fr" jcr:primaryType="jnt:translation" jcr:title="textWithImage" />
+            <j:translation_pt jcr:language="pt" jcr:primaryType="jnt:translation" jcr:title="textWithImage" />
+            <j:translation_de jcr:language="de" jcr:primaryType="jnt:translation" jcr:title="textWithImage" />
+          </jnt:textWithImage>
+        </jmix:structuredContent>
+        <jmix:basicContent j:originWS="default" jcr:primaryType="jnt:componentFolder">
+          <j:translation_en jcr:description="" jcr:language="en" jcr:primaryType="jnt:translation" jcr:title="Content:Basic " />
+          <j:translation_it jcr:description="" jcr:language="it" jcr:primaryType="jnt:translation" jcr:title="Semplice contenuto" />
+          <j:translation_es jcr:description="" jcr:language="es" jcr:primaryType="jnt:translation" jcr:title="Contenido : simples" />
+          <j:translation_fr jcr:description="" jcr:language="fr" jcr:primaryType="jnt:translation" jcr:title="Contenus Simples" />
+          <j:translation_pt jcr:description="" jcr:language="pt" jcr:primaryType="jnt:translation" jcr:title="Conteúdo simples" />
+          <j:translation_de jcr:description="" jcr:language="de" jcr:primaryType="jnt:translation" jcr:title="Content:Einfach" />
+          <jnt:imagealignright j:originWS="default" jcr:primaryType="jnt:simpleComponent">
+            <j:translation_en jcr:language="en" jcr:primaryType="jnt:translation" jcr:title="imagealignright" />
+            <j:translation_it jcr:language="it" jcr:primaryType="jnt:translation" jcr:title="imagealignright" />
+            <j:translation_es jcr:language="es" jcr:primaryType="jnt:translation" jcr:title="imagealignright" />
+            <j:translation_fr jcr:language="fr" jcr:primaryType="jnt:translation" jcr:title="imagealignright" />
+            <j:translation_pt jcr:language="pt" jcr:primaryType="jnt:translation" jcr:title="imagealignright" />
+            <j:translation_de jcr:language="de" jcr:primaryType="jnt:translation" jcr:title="imagealignright" />
+          </jnt:imagealignright>
+        </jmix:basicContent>
+      </components>
     </templates-libre>
   </templateSets>
 </content>

@@ -51,7 +51,7 @@
     <div id="header" style="z-index:100">
 	    <div id="headerwrap">
 	    	<div id="toplogo"><template:area path="toplogo"/></div>
-	    	<div class="topSlogan">LibreCAD, Open Source 2D-CAD</div>
+	    	<div class="topSlogan"><template:area path="topSlogan"/></div>
 	    	<div id="topmenu"><template:area path="menu"/></div>
 	    	<div class="clear"></div>
 	    </div>
